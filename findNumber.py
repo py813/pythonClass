@@ -6,13 +6,12 @@ def findsecLarge(numbers):
     for i in numbers:
         
         #check if there are enough elements in the array to function
-        if len(numbers) == 1 or len(numbers) == 0:
+        if len(numbers) < 2:
 
             return("There are not enough elements in the array.")
 
         #check if all elements in array are equal
         elif all(i == numbers[0] for i in numbers):
-       
             return("All numbers in array are the same.")
             
         #if array is not all equal run function for second largest
